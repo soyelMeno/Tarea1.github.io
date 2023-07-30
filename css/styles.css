@@ -1,0 +1,86 @@
+.body{
+    background-color: antiquewhite;
+}
+.encabezado{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #000;
+    background-color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.panel{
+        width: 30%;
+        margin:4px;
+        color: aliceblue;
+}
+.left{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:start;
+    align-items: end;
+}
+.mid{
+ display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+    align-items: center;   
+}
+.right{
+    display: flex;
+    justify-content:end;
+    align-items: center;
+}
+
+/* ---------------------- MAIN ----------------------*/
+.main{
+    height: 580px;
+    width: 100%;
+    border: 1px solid #000;
+    
+    display: flex;
+    background-image: url("../imagenes/Fondo2.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.input{
+    
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: aliceblue;
+    font-weight: bold;
+}
+.Half{
+    width: 50%;
+    
+}
+/* ---------------------- FOOTER ----------------------*/
+.footer{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    border: 1px solid #000;
+    background-color: #000;
+}
+.redes{
+    width: 18%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:right;
+    align-items: center;
+    border: 1px solid #000;
+    color: aliceblue;
+}
+.enlaces{
+    width: 82%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:left;
+    align-items: center;
+    border: 1px solid #000;
+}
