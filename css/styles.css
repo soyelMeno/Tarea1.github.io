@@ -12,16 +12,19 @@
 }
 .panel{
         width: 30%;
+        min-width: 200px;
         margin:4px;
         color: aliceblue;
 }
 .left{
     display: flex;
     flex-flow: row wrap;
-    justify-content:start;
-    align-items: end;
+    align-items: center;
+    justify-content: space-around;
+    order: 3;
 }
 .mid{
+    order: 2;
  display: flex;
     flex-flow: row wrap;
     justify-content:center;
@@ -29,8 +32,9 @@
 }
 .right{
     display: flex;
-    justify-content:end;
+    justify-content:left;
     align-items: center;
+    order :1;
 }
 
 /* ---------------------- MAIN ----------------------*/
@@ -83,4 +87,31 @@
     justify-content:left;
     align-items: center;
     border: 1px solid #000;
+}
+/* ---------------------Media Queerry --------------------*/
+/*Escritorio*/
+@media (min-width: 1199.98px)  {
+    body{background: red;}
+}
+
+/*tablets*/
+@media (min-width: 676px) and (max-width: 1199.98px){
+    body{background: blue;}
+    .main{
+        background-image: url("../imagenes/Tablet2.jpeg");
+    }
+}
+
+/*telefono*/
+@media (min-width: 200px) and (max-width: 675px){
+    body{background: black;}
+    .left{
+        display: none;
+    }
+    .right{
+        display: none;
+    }
+    .main{
+        background-image: url("../imagenes/Movil.jpeg");
+    }
 }
