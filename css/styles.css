@@ -30,6 +30,9 @@
     justify-content:center;
     align-items: center;   
 }
+.imagen{
+    height: 50px;
+}
 .right{
     display: flex;
     justify-content:left;
@@ -113,5 +116,6 @@
     }
     .main{
         background-image: url("../imagenes/Movil.jpeg");
+
     }
 }
